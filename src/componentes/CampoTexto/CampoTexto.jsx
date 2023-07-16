@@ -8,22 +8,23 @@ const LabelEstilizada = styled.label`
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-    `
-    const InputEstilizado = styled.input`
-    display: block;
-    width: 100%;
-    box-sizing: border-box;
-    margin-top: ${props => props.theme.espacementos.xs};
+`
 
-    border-radius: ${props => props.theme.espacementos.s};
-    border: 1px solid;
-    border-color: ${props => props.theme.cores.neutras.a};
-    background: ${props => props.theme.cores.branco};
-    height: 40px;
+const InputEstilizado = styled.input`
+display: block;
+width: 100%;
+box-sizing: border-box;
+margin-top: ${props => props.theme.espacementos.xs};
 
-    font-weight: 400;
-    font-size: 14px;
-    font-height: 17px;
+border-radius: ${props => props.theme.espacementos.s};
+border: 1px solid;
+border-color: ${props => props.theme.cores.neutras.a};
+background: ${props => props.theme.cores.branco};
+height: 40px;
+
+font-weight: 400;
+font-size: 14px;
+font-height: 17px;
 `
 
 
