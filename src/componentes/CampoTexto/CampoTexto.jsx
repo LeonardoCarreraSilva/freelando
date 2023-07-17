@@ -15,6 +15,7 @@ display: block;
 width: 100%;
 box-sizing: border-box;
 margin-top: ${props => props.theme.espacementos.xs};
+margin-bottom: ${props => props.theme.espacementos.s};
 
 border-radius: ${props => props.theme.espacementos.s};
 border: 1px solid;
