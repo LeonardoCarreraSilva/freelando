@@ -5,15 +5,36 @@ import { Card } from "./componentes/Card/Card";
 import { Estilos } from "./componentes/EstilosGlobais/Estilo";
 import { ProvedorTema } from "./componentes/ProvedorTema/ProvedorTema";
 import { Tipografia } from "./componentes/Tipografia/Tipografia";
+import { Cabecalho } from "./componentes/Cabecalho/Cabecalho";
+import { FreelandoLogo } from "./componentes/Icones/FreelandoLogo";
+import { Link } from "./componentes/Link/Link";
+import { Rodape } from "./componentes/Rodape/Rodape";
+import { ListaInline } from "./componentes/Lista/ListaInline";
+import { ItemListaInline } from "./componentes/Lista/ItemListaInline";
+import { IconeTwitter } from "./componentes/Icones/IconeTwitter";
+import { IconeWhatsApp } from "./componentes/Icones/IconeWhatsApp";
+import { IconeInstagram } from "./componentes/Icones/IconeInstagram";
+import { IconeTwitch } from "./componentes/Icones/IconeTwitch";
 
 function App() {
   return (
     <ProvedorTema>
       <Estilos />
 
-
-      <Container style={{margin: '80px 0'}}>
-        <Row justify="center">
+      <Cabecalho>
+        <Container>
+          <Row align="center">
+            <Col>
+              <FreelandoLogo />
+            </Col>
+            <Col style={{ textAlign: "right" }}>
+              <Link href="#">Entrar</Link>
+            </Col>
+          </Row>
+        </Container>
+      </Cabecalho>
+      <Container style={{ marginTop: "80px" }}>
+        <Row justify="center" align="center">
           <Col lg={8} md={8} sm={12}>
             <Card>
               <Tipografia variante="h1" componente="h1">
@@ -55,15 +76,11 @@ function App() {
 
               <Row>
                 <Col lg={6} md={6} sm={6}>
-                  <Botao variante="Secundaria"> 
-                    Anterior
-                  </Botao>
+                  <Botao variante="Secundaria">Anterior</Botao>
                 </Col>
                 <Col lg={6} md={6} sm={6}>
                   <div style={{ textAlign: "right" }}>
-                    <Botao>
-                      Proximo
-                    </Botao>
+                    <Botao>Proximo</Botao>
                   </div>
                 </Col>
               </Row>
@@ -71,6 +88,46 @@ function App() {
           </Col>
         </Row>
       </Container>
+
+      <Rodape>
+        <Container>
+          <Row align="center">
+            <Col>
+              <FreelandoLogo height={40} width={176} />
+              <Tipografia variante="legenda" componente="legenda">
+                Desenvolvido por Alura. Projeto fictício sem fins comerciais.
+              </Tipografia>
+              <Col style={{ textAlign: "right" }}>
+                <Tipografia variante="legenda" componente="legenda">
+                  Acesse nossas redes:
+                </Tipografia>
+                <ListaInline>
+                  <ItemListaInline>
+                    <a href="/" aria-label="Link para o WhatsApp">
+                      <IconeWhatsApp />
+                    </a>
+                  </ItemListaInline>
+                  <ItemListaInline>
+                    <a href="/" aria-label="Link para a Twitch">
+                      <IconeTwitch />
+                    </a>
+                  </ItemListaInline>
+                  <ItemListaInline>
+                    <a href="/" aria-label="Link para a Instagram">
+                      <IconeInstagram />
+                    </a>
+                  </ItemListaInline>
+                  <ItemListaInline>
+                    <a href="/" aria-label="Link para a Twitter">
+                      <IconeTwitter />
+                    </a>
+                  </ItemListaInline>
+                </ListaInline>
+              </Col>
+            </Col>
+          </Row>
+        </Container>
+      </Rodape>
     </ProvedorTema>
   );
 }

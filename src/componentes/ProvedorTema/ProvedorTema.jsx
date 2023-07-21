@@ -23,7 +23,7 @@ const tema ={
         },
         dark:{
             a: '',
-            b: ''
+            b: '#B61B00'
         }
     },
     espacementos:{

@@ -3,6 +3,7 @@ import styled from "@emotion/styled"
 const componentes = {
     h1: 'h1',
     body: 'p',
+    legenda: 'p'
 }
 
 const estilos ={
@@ -56,6 +57,11 @@ const estilos ={
         fons-size: 14px;
         line-height: normal;
         text-decoration-line: underline;
+    `,
+    legenda: `
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 17px;
     `,
 }
 
