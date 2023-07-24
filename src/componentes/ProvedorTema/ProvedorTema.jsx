@@ -4,7 +4,7 @@ const tema ={
     cores:{
         branco: '#FFFFFF',
         atencao: '',
-        focus: '',
+        focus: '#B009FF',
         primarias: {
             a: '#5754ED',
             b: '#D93114',

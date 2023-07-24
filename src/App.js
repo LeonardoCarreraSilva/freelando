@@ -1,20 +1,23 @@
 import { Col, Container, Row } from "react-grid-system";
 import { Botao } from "./componentes/Botaoes/Botao";
+import { Cabecalho } from "./componentes/Cabecalho/Cabecalho";
 import { CampoTexto } from "./componentes/CampoTexto/CampoTexto";
 import { Card } from "./componentes/Card/Card";
+import { estadosBrasileiros } from "./componentes/EstadosBrasileiros/EstadosBrasileiros";
 import { Estilos } from "./componentes/EstilosGlobais/Estilo";
-import { ProvedorTema } from "./componentes/ProvedorTema/ProvedorTema";
-import { Tipografia } from "./componentes/Tipografia/Tipografia";
-import { Cabecalho } from "./componentes/Cabecalho/Cabecalho";
 import { FreelandoLogo } from "./componentes/Icones/FreelandoLogo";
-import { Link } from "./componentes/Link/Link";
-import { Rodape } from "./componentes/Rodape/Rodape";
-import { ListaInline } from "./componentes/Lista/ListaInline";
-import { ItemListaInline } from "./componentes/Lista/ItemListaInline";
-import { IconeTwitter } from "./componentes/Icones/IconeTwitter";
-import { IconeWhatsApp } from "./componentes/Icones/IconeWhatsApp";
 import { IconeInstagram } from "./componentes/Icones/IconeInstagram";
 import { IconeTwitch } from "./componentes/Icones/IconeTwitch";
+import { IconeTwitter } from "./componentes/Icones/IconeTwitter";
+import { IconeWhatsApp } from "./componentes/Icones/IconeWhatsApp";
+import { Link } from "./componentes/Link/Link";
+import { ItemListaInline } from "./componentes/Lista/ItemListaInline";
+import { ListaInline } from "./componentes/Lista/ListaInline";
+import { ListaSupensa } from "./componentes/ListaSuspensa/Listasuspensa";
+import { ProvedorTema } from "./componentes/ProvedorTema/ProvedorTema";
+import { Rodape } from "./componentes/Rodape/Rodape";
+import { Tipografia } from "./componentes/Tipografia/Tipografia";
+
 
 function App() {
   return (
@@ -52,7 +55,7 @@ function App() {
               </Row>
               <Row>
                 <Col lg={4} md={4} sm={4}>
-                  <CampoTexto titulo="Estado" />
+                  <ListaSupensa titulo="Estado" opcoes={estadosBrasileiros} />
                 </Col>
                 <Col lg={8} md={8} sm={8}>
                   <CampoTexto titulo="Cidade" />
